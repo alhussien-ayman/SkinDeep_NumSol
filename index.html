@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epidermal Wound Healing PDE Solver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Recharts - ensure this is compatible with your React version or manage via npm -->
+    <!-- For simplicity in this environment, direct script include might be tricky with React components.
+         Typically, Recharts would be an npm dependency. Assuming environment handles this.
+         If not, a UMD build of Recharts would be needed.
+         For this exercise, we'll assume Recharts is available via module imports. -->
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .recharts-responsive-container {
+        aspect-ratio: 16 / 9; /* Maintain aspect ratio for charts */
+      }
+      @media (min-width: 768px) { /* md breakpoint in Tailwind */
+        .recharts-responsive-container {
+          min-height: 350px; /* Ensure charts have enough height on larger screens */
+        }
+      }
+       @media (max-width: 767px) { /* smaller than md breakpoint */
+        .recharts-responsive-container {
+          min-height: 250px; /* Adjust height for smaller screens */
+        }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
