@@ -1,0 +1,6 @@
+{
+  "name": "Epidermal Wound Healing PDE Solver",
+  "description": "A web application to simulate and visualize solutions to the epidermal wound healing PDE using four different numerical methods: Explicit Finite Difference, Finite Element Method (simplified), Method of Lines (simplified), and Crank-Nicolson. Users can adjust parameters and compare the outcomes, including an analytical solution for specific linear cases.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
